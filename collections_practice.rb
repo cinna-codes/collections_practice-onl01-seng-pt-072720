@@ -42,7 +42,7 @@ end
 
 def add_s(array)
   array.each_with_index.map do |x, i|
-    if (i != 1)
+    if i != 1
       x + "s"
     else
       x
