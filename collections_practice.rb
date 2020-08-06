@@ -41,7 +41,7 @@ def sum_array(array)
 end
 
 def add_s(array)
-  array.map do |x, i|
+  array.each_with_index.map do |x, i|
     if (i != 1)
       x + "s"
     else
