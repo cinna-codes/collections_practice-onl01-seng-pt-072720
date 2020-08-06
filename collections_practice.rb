@@ -41,12 +41,12 @@ def sum_array(array)
 end
 
 def add_s(array)
-  array.map do |x|
-    if x = array[1]
-      array
+  array.map do |x, i|
+    if i != 1
+      x + "s"
     else
-      x << "s"
+      x
     end
   end
-array
+
 end
